@@ -43,11 +43,14 @@ def get_random_number():
         # input your guess number
         guess_number = int(input("Enter your guess: "))
         match guess_number:
+            # case when you're you guessed id
             case guess_number if guess_number == random_number:
                 print("Congratulations, you guessed it!")
                 break
+            # case when you guessed a number over the random one
             case guess_number if guess_number > random_number:
                 print("Oops your number is Too high")
+            # case when you guessed a number below the random one
             case guess_number if guess_number < random_number:
                 print("Nope try again, your number is Too low")
             case _:
@@ -61,6 +64,7 @@ def get_random_number():
             continue
         else:
             print("Invalid input")
+            break
         
 
     print("")
