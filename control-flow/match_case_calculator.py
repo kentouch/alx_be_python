@@ -25,9 +25,9 @@
 
 ##### code ####
 
-f_num = int(input("Enter first number: "))
-s_num = int(input("Enter second number: "))
-operation = input("Enter operation (+, -, *, /): ")
+f_num = int(input("Enter the first number: "))
+s_num = int(input("Enter the second number: "))
+operation = input("Choose the operation (+, -, *, /): ")
 
 match operation:
     case "+":
