@@ -3,14 +3,13 @@
 def perform_operation(num1, num2, operation):
     '''match the input operation'''
     match operation:
-        case 'add':
+        case operation if operation == 'add':
             return num1 + num2
-        case 'subtract':
+        case operation if operation == 'subtract':
             return num1 - num2
-        case 'multiply':
+        case operation if operation == 'multiply':
             return num1 * num2
-        case 'divide':
-            if num2 !=0 :
+        case operation if operation == 'divide' and num2 != 0:
                 return num1/num2
         case _:
             return 'Invalid operation'
