@@ -9,7 +9,8 @@ def perform_operation(num1, num2, operation):
             return num1 - num2
         case operation if operation == 'multiply':
             return num1 * num2
-        case operation if operation == 'divide' and num2 != 0:
+        case operation if operation == 'divide':
+            if num2 != 0:
                 return num1/num2
         case _:
             return 'Invalid operation'
