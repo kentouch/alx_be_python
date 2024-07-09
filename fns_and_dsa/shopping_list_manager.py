@@ -3,7 +3,7 @@
 
 
 def display_menu():
-    '''print the menu'''
+    print("Shopping List Manager")
     print("1. Add item")
     print("2. Remove item")
     print("3. View your list of items")
