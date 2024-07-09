@@ -10,7 +10,7 @@ def display_menu():
     print("4. Exit")
 
 def main():
-    list_items = []
+    shopping_list = []
     while True:
         # display first the menu
         display_menu()
@@ -20,17 +20,17 @@ def main():
         if option == "1" :
             # enter the item in the list
             item = input("Enter your item to add: ")
-            list_items.append(item)
+            shopping_list.append(item)
         # prompt the user if he selected 2 as a choice to enter an item from the list to remove
         elif option == "2":
             item = input("Enter your item to remove: ")
-            if item not in list_items:
+            if item not in shopping_list:
                 print(f"The {item} do not exist in the list")
             else:
-                list_items.remove(item)
+                shopping_list.remove(item)
         # prompt the user if he selected 3 to display the list of items
         elif option == "3":
-             print(list_items)
+             print(shopping_list)
         # prompt the user if he selected 4 to exit 
         elif option == "4":
             break
