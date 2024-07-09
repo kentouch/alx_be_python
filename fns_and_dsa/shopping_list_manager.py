@@ -19,11 +19,11 @@ def main():
         # if choice is 1 meaning 'add item' 
         if option == "1" :
             # enter the item in the list
-            item = input("Enter your item to add: ")
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
         # prompt the user if he selected 2 as a choice to enter an item from the list to remove
         elif option == "2":
-            item = input("Enter your item to remove: ")
+            item = input("Enter the item to remove: ")
             if item not in shopping_list:
                 print(f"The {item} do not exist in the list")
             else:
