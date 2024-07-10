@@ -24,8 +24,10 @@ def main ():
     fahrenheit_or_celsius = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
     if fahrenheit_or_celsius == "C":
         convert_to_fahrenheit(temperature)
-    else:
+    elif fahrenheit_or_celsius == "F":
         convert_to_celsius(temperature)
+    else:
+        print("Invalid temperature, enter a numeric value")
 
 if __name__=="__main__":
     main()
