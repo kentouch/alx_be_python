@@ -27,7 +27,7 @@ def main ():
     elif fahrenheit_or_celsius == "F":
         convert_to_celsius(temperature)
     else:
-        print("Invalid temperature, Please enter a numeric value")
+        print("Invalid temperature, Please enter a numeric value .")
 
 if __name__=="__main__":
     main()
