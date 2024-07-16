@@ -5,7 +5,7 @@
 
 class BankAccount:
     # initialize he 
-    def __init__(self, account_balance):
+    def __init__(self, account_balance=0):
         self._account_balance = account_balance
 
     # implement a deposit method using a parameter called amount
