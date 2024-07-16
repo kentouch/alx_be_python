@@ -24,5 +24,5 @@ class BankAccount:
 
     # implement a display_balance method using a parameter called amount
     def display_balance(self):
-        print(f"Current Balance:{self._account_balance}") 
+        print(f"Current Balance:{float(self._account_balance)}") 
 
