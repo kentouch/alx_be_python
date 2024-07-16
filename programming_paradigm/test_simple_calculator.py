@@ -12,30 +12,30 @@ class TestSimpleCalculator(unittest.TestCase):
     # test addition operation
     def test_addition(self):
         # positive numbers as input
-        self.assertEqual(self.calc.add(2, 3), 5)
+        self.assertEqual(self.calc.addition(2, 3), 5)
         # negative number as input
-        self.assertEqual(self.calc.add(2, -3), -1)
+        self.assertEqual(self.calc.addition(2, -3), -1)
     # test substraction
-    def test_substraction(self):
+    def test_subtraction(self):
         # positive numbers as input 
-        self.assertEqual(self.calc.sub(4, 5), -1)
+        self.assertEqual(self.calc.subtract(4, 5), -1)
         # negative numbers as input
-        self.assertEqual(self.calc.sub(4, -7), 11)
+        self.assertEqual(self.calc.subtract(4, -7), 11)
     # test multiplication
     def test_multiply(self):
         # positive numbers as input
-        self.assertEqual(self.calc.mult(3, 9), 27)
+        self.assertEqual(self.calc.multiply(3, 9), 27)
         # negative numbers as input
-        self.assertEqual(self.calc.mult(3, -5), -15)
+        self.assertEqual(self.calc.multiply(3, -5), -15)
     
     # test division
     def test_divide(self):
         # positive numbers as input
-        self.assertEqual(self.calc.div(8, 4), 2)
+        self.assertEqual(self.calc.divide(8, 4), 2)
         # negative numbers as input
-        self.assertEqual(self.calc.div(8, -4), -2)
+        self.assertEqual(self.calc.divide(8, -4), -2)
         # negative numbers as input
-        self.assertEqual(self.calc.div(8, 0),"Error: Cannot divide by zero.")
+        self.assertEqual(self.calc.divide(8, 0),"Error: Cannot divide by zero.")
 
 if __name__=="__main__":
     unittest.main()
