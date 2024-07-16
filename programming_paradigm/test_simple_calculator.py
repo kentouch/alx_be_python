@@ -22,14 +22,14 @@ class TestSimpleCalculator(unittest.TestCase):
         # negative numbers as input
         self.assertEqual(self.calc.subtract(4, -7), 11)
     # test multiplication
-    def test_multiply(self):
+    def test_multiplication(self):
         # positive numbers as input
         self.assertEqual(self.calc.multiply(3, 9), 27)
         # negative numbers as input
         self.assertEqual(self.calc.multiply(3, -5), -15)
     
     # test division
-    def test_divide(self):
+    def test_division(self):
         # positive numbers as input
         self.assertEqual(self.calc.divide(8, 4), 2)
         # negative numbers as input
