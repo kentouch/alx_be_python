@@ -10,26 +10,26 @@ class TestSimpleCalculator(unittest.TestCase):
         self.calc = SimpleCalculator()
     
     # test addition operation
-    def testAdd(self):
+    def test_addition(self):
         # positive numbers as input
         self.assertEqual(self.calc.add(2, 3), 5)
         # negative number as input
         self.assertEqual(self.calc.add(2, -3), -1)
     # test substraction
-    def testSub(self):
+    def test_substraction(self):
         # positive numbers as input 
         self.assertEqual(self.calc.sub(4, 5), -1)
         # negative numbers as input
         self.assertEqual(self.calc.sub(4, -7), 11)
     # test multiplication
-    def testMult(self):
+    def test_multiply(self):
         # positive numbers as input
         self.assertEqual(self.calc.mult(3, 9), 27)
         # negative numbers as input
         self.assertEqual(self.calc.mult(3, -5), -15)
     
     # test division
-    def testDiv(self):
+    def test_divide(self):
         # positive numbers as input
         self.assertEqual(self.calc.div(8, 4), 2)
         # negative numbers as input
