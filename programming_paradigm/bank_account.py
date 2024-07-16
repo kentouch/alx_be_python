@@ -24,5 +24,5 @@ class BankAccount:
 
     # implement a display_balance method using a parameter called amount
     def display_balance(self):
-        print(f"Current Balance:{format(self._account_balance, '.2f')}") 
+        print(f"Current Balance: ${format(self._account_balance, '.2f')}") 
 
