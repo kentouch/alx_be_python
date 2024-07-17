@@ -32,35 +32,34 @@ class Book:
 # Library class
 class Library:
 
-    # Creating an empty list
-    __list_books = []
     def __init__(self): 
-        pass
+        # Creating an empty list of books
+        self._books = []
     # Adding a book in the Library
     def add_book(self, book):
         self.book = book
         # Adding the book in the list
-        self.__list_books.append(self.book) 
+        self._books.append(self.book) 
     # Checked out a book in the Library
     def check_out_book(self, title):
         self.title = title
         self._is_checked_out = self.book.is_checked_out()
         # checking if the title corresponds to one of the books kept in the library
         if self._is_checked_out == False:
-                self.__list_books.remove(self.book)
+                self._books.remove(self.book)
                 self._is_checked_out = True
     # return book function is used to return the book back into the list of Books    
     def return_book(self, title):
         self.title = title
         if self._is_checked_out == True:
-                self.__list_books.append(self.book)
+                self._books.append(self.book)
     def list_available_books(self):
-        for b in self.__list_books:
+        for b in self._books:
             print(b.title, b.author)
     
 
 
-def main():
+"""def main():
     book1 = Book("Harry Poter", "JK Rowling")
     book2 = Book("Superman", "Clark Kent")
     library = Library()
@@ -74,7 +73,7 @@ def main():
     library.list_available_books()
 
 if __name__=="__main__":
-    main()
+    main()"""
 
 
 
