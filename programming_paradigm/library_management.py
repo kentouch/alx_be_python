@@ -32,6 +32,8 @@ class Library:
 
     # Creating an empty list
     __list_books = []
+    def __init__(self): 
+        pass
     # Adding a book in the Library
     def add_book(self, book):
         self.book = book
