@@ -22,7 +22,9 @@ class Book:
     def is_checked_out(self):
         return self.__is_checked_out
         
-    
+    # return book 
+    def return_book(self):
+        return self.__is_checked_out
     # Iis a book checked out or not
     """def checked_out(self, __is_checked_out):
         self.__is_checked_out = __is_checked_out"""
