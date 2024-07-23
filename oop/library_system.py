@@ -17,7 +17,7 @@ class EBook(Book):
         super().__init__(title, author)
         self.file_size = file_size
     def __str__(self):
-        return f"EBook: {self.title} by {self.author}, file size: {self.file_size}"
+        return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}"
 
 # Printbook class derived from Book class
 class PrintBook(Book):
@@ -26,7 +26,7 @@ class PrintBook(Book):
         super().__init__(title, author)
         self.page_count = page_count
     def __str__(self):
-        return f"PrintBook: {self.title} by {self.author}, page_count: {self.page_count}"
+        return f"PrintBook: {self.title} by {self.author}, Page_Count: {self.page_count}"
     
 # composition Library class
 class Library:
