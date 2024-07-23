@@ -8,11 +8,16 @@ class Book:
     def __init__(self, title, author):
         self.title = title
         self.author = author
+    
+    def __str__(self):
+        return f"Book: {self.title} by {self.author}"
 # Ebook class derived from Book class
 class EBook(Book):
     def __init__(self, title, author, file_size):
         super().__init__(title, author)
         self.file_size = file_size
+    def __str__(self):
+        return f"EBook: {self.title} by {self.author}, file size: {self.file_size}"
 
 # Printbook class derived from Book class
 class PrintBook(Book):
@@ -20,6 +25,8 @@ class PrintBook(Book):
     def __init__(self, title, author, page_count):
         super().__init__(title, author)
         self.page_count = page_count
+    def __str__(self):
+        return f"PrintBook: {self.title} by {self.author}, page_count: {self.page_count}"
     
 # composition Library class
 class Library:
@@ -35,12 +42,7 @@ class Library:
     # list all the book in the library using list_books method
     def list_books(self):
         for b in self.books:
-            if b.__class__ == Book:
-                print(f"Book: {b.title} by {b.author}")
-            elif b.__class__ == PrintBook:
-                print(f"PrintBook: {b.title} by {b.author}, file size: {b.page_count}")
-            else:
-                print(f"EBook: {b.title} by {b.author}, page_count: {b.file_size}")
+            print(b)
             
             
             
