@@ -26,7 +26,7 @@ class PrintBook(Book):
         super().__init__(title, author)
         self.page_count = page_count
     def __str__(self):
-        return f"PrintBook: {self.title} by {self.author}, Page_Count: {self.page_count}"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
     
 # composition Library class
 class Library:
