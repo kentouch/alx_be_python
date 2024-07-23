@@ -14,7 +14,7 @@ class Book:
 
     # string representation
     def __str__(self):
-        return f"{self.title} by {self.author}, published in ({self.year})"
+        return f"{self.title} by {self.author}, published in {self.year}"
 
     # official string representation
     def __repr__(self):
